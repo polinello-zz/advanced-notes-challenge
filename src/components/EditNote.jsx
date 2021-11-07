@@ -6,6 +6,7 @@ const EditNote = props => {
   const handleSubmit = event => {
     event.preventDefault();
     props.onSubmit(event.target.editNote.value);
+    event.target.editNote.value = "";
   };
   return (
     <Row className="p-2" style={{ background: "#eff2f7", opacity: 1 }}>
