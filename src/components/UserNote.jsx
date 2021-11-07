@@ -4,7 +4,6 @@ import { Col, Image, Row } from "react-bootstrap";
 import ReadMore from "./ReadMore";
 
 const UserNote = props => {
-  console.log("len", props.note.note.length);
   return (
     <Row className="mb-3">
       <Col xs="auto" className="order-2 pt-4">
