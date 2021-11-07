@@ -1,12 +1,5 @@
-.text {
-  display: inline;
-  width: 100%;
-}
-
-.read-or-hide {
-  color: red;
-  cursor: pointer;
-}
+$greyUserNote: #c2cddd;
+$greyOtherNote: #c2cddd;
 
 .switch {
   position: relative;
@@ -68,9 +61,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .other-note {
-  background: #eff2f7;
+  background: $greyOtherNote;
   position: relative;
   opacity: 1;
+  height: 4rem;
 }
 .other-note::before {
   position: absolute;
@@ -80,15 +74,16 @@ input:checked + .slider:before {
   width: 0;
   height: 0;
   border-width: 0px 0.5rem 0.75rem 0px;
-  border-color: #eff2f7 #eff2f7 transparent transparent;
+  border-color: $greyOtherNote;
   border-style: solid;
   margin-left: -0.5rem;
 }
 
 .user-note {
-  background: #c2cddd;
+  background: $greyUserNote;
   position: relative;
   opacity: 1;
+  height: 4rem;
 }
 .user-note::before {
   position: absolute;
@@ -98,7 +93,7 @@ input:checked + .slider:before {
   width: 0;
   height: 0;
   border-width: 0px 0px 0.75rem 0.5rem;
-  border-color: #c2cddd transparent transparent #c2cddd;
+  border-color: $greyUserNote;
   border-style: solid;
   margin-right: -0.5rem;
 }
