@@ -1,6 +1,7 @@
 # Code Challenge "Advanced Notes"
 
 I realized this project in order to pass a Company selection code challenge.
+You can view the app at this link https://codesandbox.io/s/advanced-notes-challenge-hmzll
 
 ### Functionalities
 
